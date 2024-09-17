@@ -1,0 +1,215 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import '@splidejs/react-splide/css';
+@import '@splidejs/react-splide/css/skyblue';
+@import '@splidejs/react-splide/css/sea-green';
+@import '@splidejs/react-splide/css/core';
+
+@import '../styles/variables.scss';
+@import '../styles/global.scss';
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: $neutral-88;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $neutral-70;
+  border-radius: 50px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: $neutral-60;
+}
+
+*:focus-visible {
+  outline: 1px solid $primary-45;
+}
+
+@media (prefers-color-scheme: dark) {
+  s :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+html {
+  overflow-y: scroll;
+}
+
+body {
+  color: $neutral-0;
+  background: $neutral-88;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.txt-focus {
+  &:focus-visible {
+    text-decoration: underline;
+    outline: none;
+  }
+}
+
+.custom-container {
+  max-width: 400px;
+  padding-inline: 8px;
+}
+
+input {
+  transition: .2s;
+  outline: 1px solid $neutral-80;
+  border: 1px solid transparent;
+  color: $primary-10;
+  border-radius: 20px;
+  padding-left: 16px;
+  width: 100%;
+  height: 40px;
+
+  &:focus-visible {
+    outline: 1px solid $primary-70;
+    border: 1px solid $primary-70;
+  }
+
+  &::placeholder {
+    color: $neutral-50;
+  }
+}
+
+.primary-btn {
+  background-color: $primary-50;
+  transition: .4s;
+  outline-offset: 2px;
+  outline: 1px solid transparent;
+  border-radius: 4px;
+  font-weight: 800;
+  color: $primary-80;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  &:hover {
+    background-color: $primary-65;
+  }
+
+  &:focus-visible {
+    transition: none;
+    outline-offset: 2px;
+    outline: 1px solid $primary-45;
+  }
+
+  &:active {
+    background-color: $primary-70;
+  }
+}
+
+.secondary-btn {
+  background-color: $neutral-88;
+  border-radius: 4px;
+  transition: .4s;
+  color: $neutral-30;
+  font-weight: 600;
+
+  &:hover {
+    background-color: $neutral-80;
+  }
+
+  &:focus-visible {
+    transition: none;
+    outline-offset: 2px;
+    outline: 1px solid $neutral-70;
+  }
+
+  &:active {
+    background-color: $neutral-90;
+  }
+}
+
+.error-btn {
+  background-color: $error-80;
+  border: 1px solid $error-50;
+  color: $neutral-0;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  transition: .4s;
+
+  &:hover {
+    background-color: transparent;
+  }
+
+  &:focus-visible {
+    transition: none;
+    outline-offset: 2px;
+    outline: 1px solid $neutral-70;
+  }
+
+  &:active {
+    background-color: $neutral-90;
+  }
+}
+
+.scale_on_hover {
+  transition: .2s;
+
+  &:hover {
+    scale: 1.1;
+  }
+}
+
+@keyframes loader-animation {
+  0% {
+    transform: translateX(-10%);
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 1;
+  }
+
+  50% {
+    transform: translateX(80%);
+  }
+
+  100% {
+    transform: translateX(140%);
+  }
+}
+
+.loading-bg {
+  background: $neutral-86;
+  position: relative;
+  overflow: hidden;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to right, $neutral-86, $neutral-80,
+        $neutral-86);
+    animation: loader-animation 2.5s infinite;
+  }
+}

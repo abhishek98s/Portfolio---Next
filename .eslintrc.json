@@ -1,0 +1,21 @@
+{
+  "extends": "next/core-web-vitals",
+  "rules": {
+    "comma-dangle": [
+      "error",
+      {
+        "arrays": "always-multiline",
+        "objects": "always-multiline",
+        "imports": "always-multiline",
+        "exports": "always-multiline",
+        "functions": "never"
+      }
+    ],
+    "eol-last": "error",
+    "react/jsx-uses-react": "error",
+    "react/react-in-jsx-scope": "error",
+    "no-unused-vars": "error",
+    "no-undef": "error",
+    "react/prop-types": "error"
+  }
+}
