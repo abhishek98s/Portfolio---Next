@@ -6,6 +6,7 @@ import Navbar from '@/components/navbar';
 import Introduction from '@/components/introduction';
 import Expertise from '@/components/expertise';
 import Projects from '@/components/projects';
+import Footer from '@/components/footer';
 
 export default function IndexPage() {
     return (
@@ -14,6 +15,7 @@ export default function IndexPage() {
             <Introduction />
             <Expertise />
             <Projects />
+            <Footer />
         </>
     );
 }

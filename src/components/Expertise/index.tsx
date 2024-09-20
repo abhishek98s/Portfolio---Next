@@ -68,7 +68,7 @@ const Expertise = () => {
     ];
 
     return (
-        <section className='py-[80px]'>
+        <section className='py-[80px]' id="skills">
             <div className="custom-container">
                 <div className="sc-title flex items-end mb-[20px]">
                     <div className="color-primary-500 font-bold text-[24px]">02.</div>

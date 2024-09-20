@@ -51,6 +51,8 @@
 
 html {
   overflow-y: scroll;
+  scroll-behavior: smooth;
+  scroll-snap-time: 500ms;
 }
 
 body {
