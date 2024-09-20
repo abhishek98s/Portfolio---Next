@@ -2,9 +2,11 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 
+import styles from './footer.module.scss';
+
 const Footer = () => {
     return (
-        <footer className='border-primary-10 pt-[40px] pb-[20px]'>
+        <footer className='relative overflow-hidden border-primary-10 pt-[40px] pb-[20px]'>
             <div className="custom-container">
                 <div className="flex flex-col gap-[40px]">
                     <div className="top flex justify-between">
@@ -51,7 +53,13 @@ const Footer = () => {
                         </a>
                     </div>
                 </div>
+                <a href="/abhishek-shakya-cv.pdf" download='cv' className='w-[80px] rounded-full h-[80px] flex-center border-primary-10 fixed right-[20vw] bottom-[20px]'>
+                    <Image src={'/download.svg'} alt='download' width={30} height={32} />
+                </a>
             </div>
+
+            <div className={`${styles.background_ball}`}></div>
+
         </footer>
     )
 };
