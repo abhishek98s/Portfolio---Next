@@ -1,0 +1,76 @@
+@import '../../styles/variables.scss';
+
+.filter_box {
+    button {
+        transition: .4s;
+
+        &:hover {
+            background-color: $primary-5;
+        }
+
+        &.active {
+            background-color: $primary-10;
+            font-weight: 700;
+        }
+    }
+}
+
+
+.project_box {
+    transition: .4s;
+
+    .overlay {
+        transition: .3s;
+    }
+
+    &:hover {
+        .overlay {
+            transition: .3s;
+            transform: translateY(0);
+        }
+    }
+
+
+}
+
+.project_wrpper {
+    &:before {
+        content: '';
+        position: absolute;
+        width: 161px;
+        height: 165px;
+        left: calc(50% - 161px/2 + 669.5px);
+        top: calc(50% - 165px/2 - 50.06px);
+
+        background: hsl(233, 72%, 40%);
+        opacity: 0.3;
+        filter: blur(64.5px);
+        z-index: 0;
+    }
+
+    &:after {
+        content: '';
+        position: absolute;
+        width: 227px;
+        height: 232px;
+        left: calc(50% - 227px/2 - 586.5px);
+        top: calc(50% - 232px/2 + 281.44px);
+
+        background: hsl(272, 72%, 60%);
+        opacity: 0.2;
+        filter: blur(48.5px);
+        z-index: 0;
+    }
+}
+
+.ball {
+    position: absolute;
+    width: 56px;
+    height: 57.26px;
+    left: -20px;
+    top: 95%;
+
+    background: #F2F2F3;
+    opacity: 0.5;
+    box-shadow: -0.743616px 3.47021px 10.0674px rgba(50, 31, 94, 0.25), inset 0px 2.75944px 22.0755px #F0EBFB, inset 2.23085px -6.69254px 18.3425px 6.94041px #3700B8;
+}

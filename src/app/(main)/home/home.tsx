@@ -5,6 +5,7 @@ import React from 'react';
 import Navbar from '@/components/navbar';
 import Introduction from '@/components/introduction';
 import Expertise from '@/components/Expertise';
+import Projects from '@/components/Projects';
 
 export default function IndexPage() {
     return (
@@ -12,6 +13,7 @@ export default function IndexPage() {
             <Navbar />
             <Introduction />
             <Expertise />
+            <Projects />
         </>
     );
 }

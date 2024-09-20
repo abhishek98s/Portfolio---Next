@@ -24,7 +24,7 @@ const Navbar = () => {
     }, []);
 
     return (
-        <nav className='fixed top-[40px] w-full z-10'>
+        <nav className='fixed top-[40px] w-full z-50'>
             <div className="custom-container">
                 <div className={`${style.navbar_wrapper} relative flex justify-between items-center border-primary-10 rounded-[12px] px-[24px] py-[16px]`}>
                     <figure className='rounded-full'>
