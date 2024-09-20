@@ -4,7 +4,7 @@ import { Metadata } from "next";
 import IndexPage from "./(main)/home/home";
 
 export const metadata: Metadata = {
-  title: 'Title',
+  title: 'Abhishek Shakya',
 }
 
 export default function Home() {

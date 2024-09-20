@@ -53,7 +53,7 @@ const Footer = () => {
                         </a>
                     </div>
                 </div>
-                <a href="/abhishek-shakya-cv.pdf" download='cv' className='w-[80px] rounded-full h-[80px] flex-center border-primary-10 fixed right-[20vw] bottom-[20px]'>
+                <a href="/abhishek-shakya-cv.pdf" download='abhishek-shakya-cv' className='hover:translate-y-[-10px] animate-bounce transition-opacity z-50 shadow-slate-400 md bg-primary-0 w-[80px] rounded-full h-[80px] flex-center border-primary-10 fixed right-[20vw] bottom-[20px]'>
                     <Image src={'/download.svg'} alt='download' width={30} height={32} />
                 </a>
             </div>
