@@ -7,7 +7,7 @@ export const projects: IProject[] = [
         id: 1,
         title: 'Litmark : Bookmark Manager',
         description: 'Litmakr a bookmark manager that helps users to save their valuable resourece link saving the time of user instaead of saving in a nodepad.',
-        image: '/project/sialo-thumbnail.png',
+        image: '/project/litmark-thumbnail.png',
         features: ['User can save url',
             'User can make folder to organize the bookmark',
             'Nested Bookmarks',
@@ -23,7 +23,7 @@ export const projects: IProject[] = [
         id: 2,
         title: 'Sialo : Social Media App',
         description: 'Social media app to connect with the people close to you and share memories.',
-        image: '/project/litmark-thumbnail.png',
+        image: '/project/sialo-thumbnail.png',
         features: [
             'User can share post',
             'User can delete post',

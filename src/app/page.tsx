@@ -8,11 +8,11 @@ import Projects from "@/components/projects";
 export default function Home() {
   return (
     <>
-      <Navbar />
+      <Navbar isHome={true}/>
       <Introduction />
       <Expertise />
-      <Projects />
-      <Contact/>
+      <Projects isHome={true} />
+      <Contact />
       <Footer />
     </>
   );
