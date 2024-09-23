@@ -11,12 +11,12 @@ import { useEffect, useState } from "react";
 const Project = () => {
     const { id } = useParams();
 
-    const [project, setProject] = useState<IProject>();
+    const [project, setProject] = useState<IProject>(projects[0]);
 
     useEffect(() => {
         const project_id = parseInt(id as string);
         setProject(projects[project_id - 1])
-    }, [])
+    }, [id])
 
     return (
         <>

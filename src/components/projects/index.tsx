@@ -9,7 +9,7 @@ import { IProject } from '@/types/project';
 import { projects } from '@/seed/project';
 
 
-const Projects: React.FC<{ isHome: Boolean }> = ({ isHome }) => {
+const Projects: React.FC<{ isHome: boolean }> = ({ isHome }) => {
     const [projecType, setProjecType] = useState<'all' | 'frontend' | 'fullstack'>('frontend');
 
 

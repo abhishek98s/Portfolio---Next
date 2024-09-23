@@ -6,7 +6,7 @@ import style from './navbar.module.scss';
 import Image from 'next/image';
 import Link from 'next/link';
 
-const Navbar: React.FC<{ isHome: Boolean }> = ({ isHome }) => {
+const Navbar: React.FC<{ isHome: boolean }> = ({ isHome }) => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     const toggleMenu = () => {
