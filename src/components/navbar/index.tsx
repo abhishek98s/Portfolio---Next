@@ -30,7 +30,7 @@ const Navbar: React.FC<{ isHome: boolean }> = ({ isHome }) => {
     }, []);
 
     return (
-        <nav className='fixed top-[40px] w-full z-50'>
+        <nav className='fixed top-[12px] w-full z-50'>
             <div className="custom-container">
                 <div className={`${style.navbar_wrapper} relative flex justify-between items-center border-primary-10 rounded-[12px] px-[24px] py-[16px]`}>
                     <Link href="/">
@@ -84,8 +84,8 @@ const Navbar: React.FC<{ isHome: boolean }> = ({ isHome }) => {
                     }
 
                     {!isHome &&
-                        <ul className={`${style.nav_links_wrapper} hidden lg:flex nav-links-wrapper list-none`}>
-                            <li className='w-full lg:w-[100px] h-[60px] lg:h-[40px] rounded-[4px] inline-flex justify-center items-center color-primary-400 text-[16px]'>
+                        <ul className={`${style.nav_links_wrapper_desktop} hidden lg:flex nav-links-wrapper list-none`}>
+                            <li className='w-[100px] h-[60px] rounded-[4px] inline-flex justify-center items-center color-primary-400 text-[16px]'>
                                 <Link onClick={closeMenu} href={'/'}>Home</Link>
                             </li>
                         </ul>}

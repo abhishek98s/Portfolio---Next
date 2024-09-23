@@ -23,11 +23,11 @@ const Project = () => {
             <Navbar isHome={false} />
 
             <section>
-                <div className="mt-[180px] max-w-[800px] rounded-[12px] px-[18px] py-[20px] border-primary-10 bg-primary-0 w-full mx-auto">
+                <div className="mt-[180px] max-w-[800px] rounded-[12px] px-[8px] lg:px-[18px] py-[20px] border-primary-10 bg-primary-0 w-full mx-auto">
 
                     <div className="title source-serif-pro text-[40px] font-bold color-primary-800 mb-[16px]">{project.title}</div>
 
-                    <Image loading="lazy" className="border-primary-10 h-auto w-full mb-[56px]" src={project.image!} alt="sialo-thumbnail.png" width={700} height={400} />
+                    <Image loading="lazy" className="rounded-8 border-primary-10 h-auto w-full mb-[56px]" src={project.image!} alt="sialo-thumbnail.png" width={700} height={400} />
 
                     <div className="description text-[18px] mb-[20px] color-primary-400">{project.description}</div>
 
