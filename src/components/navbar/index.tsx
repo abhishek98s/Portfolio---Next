@@ -13,6 +13,10 @@ const Navbar = () => {
         setIsMenuOpen(!isMenuOpen);
     }
 
+    const closeMenu = () => {
+        setIsMenuOpen(false);
+    }
+
     useEffect(() => {
         const handleResize = () => {
             setIsMenuOpen(false);
@@ -37,17 +41,17 @@ const Navbar = () => {
                     {isMenuOpen &&
                         <ul className={`${style.nav_links_wrapper} hidden lg:flex nav-links-wrapper list-none`}>
                             <li className='w-full lg:w-[100px] h-[60px] lg:h-[40px] rounded-[4px] inline-flex justify-center items-center color-primary-400 text-[16px]'>
-                                <Link href={'#about'}>About</Link>
+                                <Link onClick={closeMenu} href={'#about'}>About</Link>
                             </li>
                             <li className='w-full lg:w-[100px] h-[60px] lg:h-[40px] rounded-[4px] inline-flex justify-center items-center color-primary-400 text-[16px]'>
-                                <Link href={'#skills'}>Skills</Link>
+                                <Link onClick={closeMenu} href={'#skills'}>Skills</Link>
                             </li>
                             <li className='w-full lg:w-[100px] h-[60px] lg:h-[40px] rounded-[4px] inline-flex justify-center items-center color-primary-400 text-[16px]'>
-                                <Link href={'#projects'}>Projects</Link>
+                                <Link onClick={closeMenu} href={'#projects'}>Projects</Link>
                             </li>
-                            {/* <li className='w-full lg:w-[100px] h-[60px] lg:h-[40px] rounded-[4px] inline-flex justify-center items-center color-primary-400 text-[16px]'>
-                                <Link href={'/'}>Contact</Link>
-                            </li> */}
+                            <li className='w-full lg:w-[100px] h-[60px] lg:h-[40px] rounded-[4px] inline-flex justify-center items-center color-primary-400 text-[16px]'>
+                                <Link onClick={closeMenu} href={'#contact'}>Contact</Link>
+                            </li>
                         </ul>
                     }
 
@@ -61,9 +65,9 @@ const Navbar = () => {
                         <li className='w-full lg:w-[100px] h-[60px] lg:h-[40px] rounded-[4px] inline-flex justify-center items-center color-primary-400 text-[16px]'>
                             <Link href={'#projects'}>Projects</Link>
                         </li>
-                        {/* <li className='w-full lg:w-[100px] h-[60px] lg:h-[40px] rounded-[4px] inline-flex justify-center items-center color-primary-400 text-[16px]'>
-                            <Link href={'/'}>Contact</Link>
-                        </li> */}
+                        <li className='w-full lg:w-[100px] h-[60px] lg:h-[40px] rounded-[4px] inline-flex justify-center items-center color-primary-400 text-[16px]'>
+                            <Link href={'#contact'}>Contact</Link>
+                        </li>
                     </ul>
 
                     <div onClick={toggleMenu} className={`${style.menu_wrapper} lg:hidden cursor-pointer flex justify-center items-center max-w-[45px] w-full h-[45px]`}>

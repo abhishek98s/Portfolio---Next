@@ -100,7 +100,6 @@ const Projects = () => {
                     ))}
 
                 </div>
-
                 <div className={`${styles.ball} ball absolute right-0 bottom-0`}></div>
             </div>
         </section>

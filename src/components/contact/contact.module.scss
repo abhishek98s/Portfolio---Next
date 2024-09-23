@@ -1,3 +1,18 @@
-.contact_wrapper {
-    // background: linear-gradient(360deg, #fff 3.68%, rgba(255, 255, 255, 0) 45.6%), url(../../../public/pattern.svg),(180deg, #fff 3.68%, rgba(255, 255, 255, 0) 45.6%), #FFFFFF,;
+.contact_bg {
+    position: relative;
+
+    &::before {
+        content: '';
+        border-radius: 50%;
+        position: absolute;
+        width: 400px;
+        height: 400px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        background: #CFA9F1;
+        opacity: 0.2;
+        filter: blur(40px);
+        z-index: 10;
+    }
 }

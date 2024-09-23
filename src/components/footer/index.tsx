@@ -27,9 +27,9 @@ const Footer = () => {
                             <li className='w-full hover:underline md:w-[100px] h-[60px] lg:h-[40px] rounded-[4px] inline-flex justify-center items-center color-primary-400 text-[16px]'>
                                 <Link className='w-full h-full inline-flex justify-center items-center' href={'#projects'}>Projects</Link>
                             </li>
-                            {/* <li className='w-full hover:underline md:w-[100px] h-[60px] lg:h-[40px] rounded-[4px] inline-flex justify-center items-center color-primary-400 text-[16px]'>
+                            <li className='w-full hover:underline md:w-[100px] h-[60px] lg:h-[40px] rounded-[4px] inline-flex justify-center items-center color-primary-400 text-[16px]'>
                                 <Link className='w-full h-full inline-flex justify-center items-center' href={'#contact'}>Contact</Link>
-                            </li> */}
+                            </li>
                         </ul>
 
                     </div>

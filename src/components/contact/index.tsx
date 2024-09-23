@@ -1,9 +1,10 @@
 import Image from "next/image";
 
+import styles from './contact.module.scss';
 
 const Contact = () => {
     return (
-        <section className={` py-[80px]`} id="Contact">
+        <section className={` py-[80px]`} id="contact">
             <div className="custom-container">
                 <div className="flex items-center">
                     <div className="info">
@@ -40,7 +41,9 @@ const Contact = () => {
                         </div>
                     </div>
 
-                    <Image className="hidden lg:block" src="/contact.svg" alt="contact.png" width={268} height={268} />
+                    <div className={`${styles.contact_bg} hidden lg:block`}>
+                        <Image className="relative z-20" src="/contact.svg" alt="contact.png" width={268} height={268} />
+                    </div>
                 </div>
             </div>
 
