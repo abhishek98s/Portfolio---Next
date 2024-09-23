@@ -29,8 +29,8 @@ const Projects: React.FC<{ isHome: Boolean }> = ({ isHome }) => {
     }
 
     return (
-        <section className={`${isHome && 'w-[94%] py-[80px] pb-[140px] '} mx-auto overflow-x-hidden`} id="projects">
-            <div className={`${styles.project_wrpper} ${isHome && 'custom-container'} relative`}>
+        <section className={`${isHome && 'w-[100%] py-[80px] pb-[140px] overflow-x-hidden'} mx-auto`} id="projects">
+            <div className={`${isHome && styles.project_wrpper} ${isHome && 'custom-container'} relative`}>
 
                 {isHome &&
                     <>
@@ -52,7 +52,7 @@ const Projects: React.FC<{ isHome: Boolean }> = ({ isHome }) => {
                     <button onClick={() => changeProjecType('fullstack')} className={`${projecType === 'fullstack' ? styles.active : ''} px-[24px] color-primary-800 text-[16px] rounded-[4px]`}>Full stack</button>
                 </div>
 
-                <div className={`project-list gap-[24px] min-h-[418px] grid grid-cols-1 md:grid-cols-2 ${isHome && 'md:grid-cols-3'} relative z-20`}>
+                <div className={`project-list gap-[24px] ${isHome && 'min-h-[418px]'} grid grid-cols-1 md:grid-cols-2 ${isHome && 'md:grid-cols-3'} relative z-20`}>
                     {projects.length && filteredArray.map((project: IProject) => (
                         <Link key={project.id} href={`/project/${project.id}`}>
                             <div className={`${styles.project_box} animation-opacity relative project rounded-[8px] overflow-hidden border-primary-300`}>
