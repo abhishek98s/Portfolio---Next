@@ -71,7 +71,7 @@ const Projects = () => {
     }
 
     return (
-        <section className={`  py-[80px] pb-[140px] w-[99.5vw] overflow-x-hidden`} id="projects">
+        <section className={`  py-[80px] pb-[140px] w-[94vw] mx-auto overflow-x-hidden`} id="projects">
             <div className={`${styles.project_wrpper} custom-container relative`}>
                 <div className="sc-title flex items-end mb-[20px]">
                     <div className="color-primary-500 font-bold text-[24px]">03.</div>
