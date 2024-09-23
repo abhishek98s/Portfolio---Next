@@ -5,55 +5,13 @@ import React, { useState } from 'react';
 import styles from './projects.module.scss';
 import Image from 'next/image';
 import Link from 'next/link';
+import { IProject } from '@/types/project';
+import { projects } from '@/seed/project';
 
-interface IProject {
-    id: number,
-    title: string,
-    image: string,
-    type: 'frontend' | 'fullstack',
-}
 
 const Projects = () => {
     const [projecType, setProjecType] = useState<'all' | 'frontend' | 'fullstack'>('frontend');
 
-    const projects: IProject[] = [
-        {
-            id: 1,
-            title: 'Sialo : Social Media App',
-            image: '/project/sialo-thumbnail.png',
-            type: 'fullstack',
-        },
-        {
-            id: 2,
-            title: 'Litmark : Bookmark Manager',
-            image: '/project/litmark-thumbnail.png',
-            type: 'fullstack',
-        },
-        {
-            id: 3,
-            title: 'HooBank : Landing page',
-            image: '/project/payment-thumbnail.png',
-            type: 'frontend',
-        },
-        {
-            id: 4,
-            title: 'WebOn : Modern App',
-            image: '/project/mobile-thumbnail.png',
-            type: 'frontend',
-        },
-        {
-            id: 5,
-            title: 'Specto : Movie templete',
-            image: '/project/movie-thumbnail.png',
-            type: 'frontend',
-        },
-        {
-            id: 6,
-            title: 'CIELO : Landing page',
-            image: '/project/cielo-thumbnail.png',
-            type: 'frontend',
-        },
-    ]
 
     const [filteredArray, setFilteredArray] = useState<IProject[]>(projects);
 
@@ -88,8 +46,8 @@ const Projects = () => {
                 </div>
 
                 <div className="project-list gap-[24px] min-h-[418px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 relative z-20">
-                    {projects.length && filteredArray.map((project: IProject, index: number) => (
-                        <Link key={index} href="">
+                    {projects.length && filteredArray.map((project: IProject) => (
+                        <Link key={project.id} href={`/project/${project.id}`}>
                             <div className={`${styles.project_box} animation-opacity relative project rounded-[8px] overflow-hidden border-primary-300`}>
                                 <figure>
                                     <Image className='w-full aspect-[1.8]' src={project.image} alt={project.image} width={500} height={185} />
