@@ -17,7 +17,7 @@ export default function Introduction() {
                                     <div className="color-primary-500 font-bold text-[24px]">Introduction</div>
                                 </div>
 
-                                <h1 className='source-serif-pro font-semibold color-primary-800 text-[65px] leading-[100%] mb-[32px]'>👋 Greetings, I am<br />Danny Lews,</h1>
+                                <h1 className='source-serif-pro font-semibold color-primary-800 text-[65px] leading-[100%] mb-[32px]'>👋 Greetings, I am<br />Abhishek Shakya,</h1>
 
                                 <div className="description color-primary-400 text-[20px] mb-[56px]">
                                     <div className='mb-[8px]'>Web developer dedicated to building applications that </div>
