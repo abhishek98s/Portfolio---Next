@@ -9,7 +9,7 @@ const Contact = () => {
                 <div className="flex items-center">
                     <div className="info">
                         <div className="sc-title flex items-end mb-[20px]">
-                            <div className="color-primary-500 font-bold text-[24px]">05.</div>
+                            <div className="color-primary-500 font-bold text-[24px]">04.</div>
                             <div className="line color-primary-500 font-bold text-[24px]"></div>
                             <div className="color-primary-500 font-bold text-[24px]">Contact</div>
                         </div>
