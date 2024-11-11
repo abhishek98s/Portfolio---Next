@@ -43,7 +43,7 @@ export const projects: IProject[] = [
         ],
         type: 'fullstack',
         tech: [...commonTech, 'Tailwind', 'Next js', 'Node js', 'Express js', 'Typescript', 'Mongo DB', 'Swagger', 'Cloudinary', 'bcrypt', 'JWT', 'Joi', 'Axios'],
-        demo_link: 'https://sialo.vercel.app/',
+        demo_link: 'https://sialo-social.vercel.app/',
     },
     {
         id: 3,
