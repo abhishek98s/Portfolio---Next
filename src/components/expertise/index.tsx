@@ -40,11 +40,11 @@ const Expertise = () => {
             image: '/skills/skill-7.png',
         },
         {
-            title: 'React',
+            title: 'React js',
             image: '/skills/skill-8.png',
         },
         {
-            title: 'Next',
+            title: 'Next js',
             image: '/skills/skill-9.png',
         },
         {
@@ -63,10 +63,10 @@ const Expertise = () => {
             title: 'MongoDB',
             image: '/skills/skill-13.png',
         },
-        {
-            title: 'Angular',
-            image: '/skills/skill-14.png',
-        },
+        // {
+        //     title: 'Angular',
+        //     image: '/skills/skill-14.png',
+        // },
     ];
 
     return (
