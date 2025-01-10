@@ -34,7 +34,7 @@ const Footer = () => {
 
                     </div>
                     <div className="flex gap-2 justify-center">
-                        <a href='mailto:abhishek9898@gmail.com'>
+                        <a href='mailto:abhishekshakya9898@gmail.com'>
                             <div className="w-[40px] h-[40px] border-primary-10 flex-center">
                                 <Image src='/gmail.svg' alt='' width={40} height={40} />
                             </div>

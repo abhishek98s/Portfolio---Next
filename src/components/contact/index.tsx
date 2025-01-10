@@ -1,3 +1,4 @@
+import React from 'react';
 import Image from "next/image";
 
 import styles from './contact.module.scss';
@@ -21,7 +22,7 @@ const Contact = () => {
                         <div className="text-[18px] color-primary-400 mb-[24px]">I&#x27;m always excited to collaborate on new and innovative projects, don&#x27;t hesitate to get in touch!</div>
 
                         <div className="flex gap-2 justify-start">
-                            <a href='mailto:abhishek9898@gmail.com'>
+                            <a href='mailto:abhishekshakya9898@gmail.com'>
                                 <div className="w-[40px] h-[40px] border-primary-10 flex-center">
                                     <Image src='/gmail.svg' alt='' width={40} height={40} />
                                 </div>
