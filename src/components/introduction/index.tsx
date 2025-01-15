@@ -13,6 +13,7 @@ export default function Introduction() {
           src={'/pattern.png'}
           width={928}
           height={894}
+          loading='eager'
           className='absolute top-0 bottom-0 left-0 right-0 w-full h-full object-cover object-center'
           alt='pattern'
           decoding='async'
