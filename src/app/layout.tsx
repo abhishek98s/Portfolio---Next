@@ -33,6 +33,7 @@ export default function RootLayout({
           type='font/woff2'
           crossOrigin='anonymous'
         />
+        <link rel='preload' href='public/pattern.png' as='image' />
       </Head>
       <body className={`antialiased`}>{children}</body>
     </html>
