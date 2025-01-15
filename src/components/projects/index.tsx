@@ -109,6 +109,7 @@ const Projects: React.FC<{ isHome: boolean }> = ({ isHome }) => {
                       alt={project.image}
                       width={500}
                       height={185}
+                      decoding='async'
                     />
                   </figure>
                   <div

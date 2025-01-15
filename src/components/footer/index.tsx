@@ -14,7 +14,13 @@ const Footer = () => {
           <div className='top flex flex-col md:flex-row items-center justify-between'>
             <div className='flex gap-3 items-center mb-[24px]'>
               <figure>
-                <Image src='/logo.svg' alt='logo.png' width={60} height={60} />
+                <Image
+                  src='/logo.svg'
+                  alt='logo.png'
+                  width={60}
+                  height={60}
+                  decoding='async'
+                />
               </figure>
               <span className='font-semibold text-[24px] color-primary-800'>
                 Abhishek Shakya
@@ -69,6 +75,7 @@ const Footer = () => {
                   alt='Gmail logo'
                   width={40}
                   height={40}
+                  decoding='async'
                 />
               </div>
             </a>
@@ -83,6 +90,7 @@ const Footer = () => {
                   alt='Linkedin logo'
                   width={40}
                   height={40}
+                  decoding='async'
                 />
               </div>
             </a>
@@ -97,6 +105,7 @@ const Footer = () => {
                   alt='Github logo'
                   width={40}
                   height={40}
+                  decoding='async'
                 />
               </div>
             </a>
@@ -107,7 +116,13 @@ const Footer = () => {
           download='abhishek-shakya-cv'
           className='hover:translate-y-[-10px] animate-bounce transition-opacity z-50 shadow-slate-400 md bg-primary-0 w-[60px] rounded-full h-[60px] flex-center border-primary-10 fixed right-[20px] bottom-[20px]'
         >
-          <Image src={'/download.svg'} alt='download' width={24} height={26} />
+          <Image
+            src={'/download.svg'}
+            alt='download'
+            width={24}
+            height={26}
+            decoding='async'
+          />
         </a>
       </div>
 
