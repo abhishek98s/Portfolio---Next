@@ -104,7 +104,7 @@ const Projects: React.FC<{ isHome: boolean }> = ({ isHome }) => {
                 >
                   <figure className='aspect-[1.8] w-full'>
                     <Image
-                      className='w-full object-cover'
+                      className='w-full h-full object-cover'
                       src={project.image}
                       alt={project.image}
                       width={500}
