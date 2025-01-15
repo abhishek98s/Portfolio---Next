@@ -5,20 +5,6 @@ const commonTech = ['HTML', 'CSS', 'SCSS', 'JS', 'Git'];
 export const projects: IProject[] = [
   {
     id: 1,
-    title: 'Shop : Simple e-commerce',
-    description: 'Simple frontend for e-commerce.',
-    image: '/project/shop-thumbnail.png',
-    features: [
-      'User add to cart',
-      'User can increase or decrease quantity in cart',
-      'Price calculated automaitcally',
-    ],
-    type: 'frontend',
-    tech: [...commonTech, 'React js', 'Typescript', 'Tailwind', 'SCSS'],
-    demo_link: 'https://sample-e-com.vercel.app/',
-  },
-  {
-    id: 2,
     title: 'Litmark : Bookmark Manager',
     description:
       'Litmakr a bookmark manager that helps users to save their valuable resourece link saving the time of user instaead of saving in a nodepad.',
@@ -36,7 +22,7 @@ export const projects: IProject[] = [
     tech: [
       ...commonTech,
       'Tailwind',
-      'Angular',
+      'React',
       'Node js',
       'Express js',
       'Typescript',
@@ -51,6 +37,20 @@ export const projects: IProject[] = [
       'Axios',
     ],
     demo_link: 'https://litmark.vercel.app/',
+  },
+  {
+    id: 2,
+    title: 'Shop : Simple e-commerce',
+    description: 'Simple frontend for e-commerce.',
+    image: '/project/shop-thumbnail.png',
+    features: [
+      'User add to cart',
+      'User can increase or decrease quantity in cart',
+      'Price calculated automaitcally',
+    ],
+    type: 'frontend',
+    tech: [...commonTech, 'React js', 'Typescript', 'Tailwind', 'SCSS'],
+    demo_link: 'https://sample-e-com.vercel.app/',
   },
   {
     id: 3,

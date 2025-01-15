@@ -21,21 +21,21 @@ const Contact = () => {
                         <div className="text-[18px] color-primary-400 mb-[24px]">I&#x27;m always excited to collaborate on new and innovative projects, don&#x27;t hesitate to get in touch!</div>
 
                         <div className="flex gap-2 justify-start">
-                            <a href='mailto:abhishek9898@gmail.com'>
+                            <a href='mailto:abhishek9898@gmail.com' aria-label="Email for any query">
                                 <div className="w-[40px] h-[40px] border-primary-10 flex-center">
-                                    <Image src='/gmail.svg' alt='' width={40} height={40} />
+                                    <Image src='/gmail.svg' alt='Gmail logo' width={40} height={40} />
                                 </div>
                             </a>
 
-                            <a href='https://www.linkedin.com/in/abhishek-shakya-42528624a/'>
+                            <a href='https://www.linkedin.com/in/abhishek-shakya-42528624a/' aria-label="Linkedin Profile">
                                 <div className="w-[40px] h-[40px] border-primary-10 flex-center">
-                                    <Image src='/linkedin.svg' alt='' width={40} height={40} />
+                                    <Image src='/linkedin.svg' alt='Linkedin logo' width={40} height={40} />
                                 </div>
                             </a>
 
-                            <a href='https://github.com/abhishek98s'>
+                            <a href='https://github.com/abhishek98s' aria-label="Visit github profile">
                                 <div className="w-[40px] h-[40px] border-primary-10 flex-center">
-                                    <Image src='/github.svg' alt='' width={40} height={40} />
+                                    <Image src='/github.svg' alt='Github logo' width={40} height={40} />
                                 </div>
                             </a>
                         </div>
