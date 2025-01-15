@@ -21,7 +21,7 @@ export default function Introduction() {
                     </div>
                   </div>
 
-                  <h1 className='source-serif-pro font-semibold color-primary-800 text-[65px] max-md:text-[48px] max-md:h-[96px] leading-[100%] mb-[32px]'>
+                  <h1 className='source-serif-pro font-semibold color-primary-800 text-[65px] max-md:text-[48px] max-sm:text-[32px] max-md:h-[96px] leading-[100%] mb-[32px]'>
                     👋 Greetings, I am
                     <br />
                     Abhishek Shakya,
