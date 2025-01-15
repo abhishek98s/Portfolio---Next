@@ -16,12 +16,12 @@ export default function Introduction() {
                       01.
                     </div>
                     <div className='line color-primary-500 font-bold text-[24px]'></div>
-                    <div className='color-primary-500 font-bold text-[24px]'>
+                    <div className='color-primary-500 font-bold text-[24px] h-[24px]'>
                       Introduction
                     </div>
                   </div>
 
-                  <h1 className='source-serif-pro font-semibold color-primary-800 text-[65px] max-md:text-[48px] leading-[100%] mb-[32px]'>
+                  <h1 className='source-serif-pro font-semibold color-primary-800 text-[65px] max-md:text-[48px] max-md:h-[96px] leading-[100%] mb-[32px]'>
                     👋 Greetings, I am
                     <br />
                     Abhishek Shakya,
