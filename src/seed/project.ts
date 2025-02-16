@@ -22,7 +22,7 @@ export const projects: IProject[] = [
     tech: [
       ...commonTech,
       'Tailwind',
-      'React',
+      'Angular',
       'Node js',
       'Express js',
       'Typescript',

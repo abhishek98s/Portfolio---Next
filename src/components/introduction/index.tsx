@@ -22,7 +22,7 @@ export default function Introduction() {
           decoding="async"
         />
         <div className="custom-container">
-          <div className="flex">
+          <div className="flex relative z-[10000]">
             <div className="max-w-[587px] w-full">
               <div className="relative">
                 <div className="sc-title flex items-end mb-[32px]">

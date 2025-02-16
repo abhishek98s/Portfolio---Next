@@ -64,10 +64,10 @@ const Expertise = () => {
       title: 'MongoDB',
       image: '/skills/skill-13.png',
     },
-    // {
-    //     title: 'Angular',
-    //     image: '/skills/skill-14.png',
-    // },
+    {
+        title: 'Angular',
+        image: '/skills/skill-14.png',
+    },
   ];
 
   return (
