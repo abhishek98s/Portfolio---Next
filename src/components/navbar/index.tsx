@@ -32,7 +32,7 @@ const Navbar: React.FC<{ isHome: boolean }> = ({ isHome }) => {
   }, []);
 
   return (
-    <nav className='fixed top-[12px] w-full z-50'>
+    <nav className='fixed top-[12px] w-full z-50 '>
       <div className='custom-container'>
         <div
           className={`${style.navbar_wrapper} relative flex justify-between items-center border-primary-10 rounded-[12px] px-[24px] py-[16px]`}

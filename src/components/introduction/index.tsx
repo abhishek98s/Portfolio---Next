@@ -8,7 +8,7 @@ import Image from 'next/image';
 export default function Introduction() {
   return (
     <>
-      <main className={`relative pt-[256px] pb-[56px]`}>
+      <main className={`relative pt-[256px] pb-[56px] z-10`}>
         <div
           className={`${style.overlay} absolute top-0 bottom-0 left-0 right-0 w-full h-full z-20`}
         ></div>
@@ -22,7 +22,7 @@ export default function Introduction() {
           decoding="async"
         />
         <div className="custom-container">
-          <div className="flex relative z-[10000]">
+          <div className="flex relative z-[100]">
             <div className="max-w-[587px] w-full">
               <div className="relative">
                 <div className="sc-title flex items-end mb-[32px]">
