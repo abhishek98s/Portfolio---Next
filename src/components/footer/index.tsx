@@ -111,7 +111,7 @@ const Footer = () => {
             </a>
           </div>
         </div>
-        <a
+        {/* <a
           href='/abhishek-shakya-cv.pdf'
           download='abhishek-shakya-cv'
           className='hover:translate-y-[-10px] animate-bounce transition-opacity z-50 shadow-slate-400 md bg-primary-0 w-[60px] rounded-full h-[60px] flex-center border-primary-10 fixed right-[20px] bottom-[20px]'
@@ -123,7 +123,7 @@ const Footer = () => {
             height={26}
             decoding='async'
           />
-        </a>
+        </a> */}
       </div>
 
       <div className={`${styles.background_ball} z-0`}></div>
